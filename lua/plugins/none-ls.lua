@@ -8,6 +8,7 @@ return {
         null_ls.builtins.formatting.htmlbeautifier,
         null_ls.builtins.formatting.rubocop,
         null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.formatting.mix,
       },
     })
     vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})

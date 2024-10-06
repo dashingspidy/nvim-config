@@ -5,7 +5,12 @@ return {
     name = "catppuccin",
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme "catppuccin-mocha"
+      require("catppuccin").setup({
+        flavour = "mocha",
+        no_italic = true,
+        no_bold = true,
+      })
+      vim.cmd.colorscheme "catppuccin"
     end
   }
 }
